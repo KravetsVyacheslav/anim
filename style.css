@@ -1,14 +1,22 @@
-
+a {
+    text-decoration: none;
+}
 .header_blok {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
     align-items: center;
 }
 li {
     list-style: none;
 }
 .container {
-    max-width: 1500px;
+    width: 1144px;
     margin: 0px auto;
 }
 .big_text {
@@ -22,10 +30,14 @@ li {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.sub_contakt {
+    color: #aaadb1;
+}
 .port_block {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 0px;
 }
 .port_text {
     font-family: 'Roboto';
@@ -49,21 +61,27 @@ li {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 510px;
     }
 .main_block {
     display: flex;
     flex-direction: row; 
 }
+.works:hover {
+    transition: all 0.5s ease-in-out
+    -o-transform; rotate:(720deg);
+    -ms-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
 .works {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    box-sizing: border-box;
-    transition-property: background-color;
-    transition-duration: 8s;
-    color: black;
-    background-color: red;
     padding: 3px;
 }
 .port_manu {
@@ -72,6 +90,13 @@ li {
     width: 575px;
     padding: 30px;
     margin: 0px auto;
+}
+.port_block_1:hover {
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 .port_block_1:hover {
     background-color: cornflowerblue;
@@ -91,11 +116,12 @@ li {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    transition-property: background-color;
-    transition-duration: 8s;
-    color: black;
-    background-color: gold;
-    padding: 3px;
+    padding: 7px;
+    border-radius: 4px;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out
 }
 header {
     display: flex;
@@ -111,25 +137,31 @@ header {
 }
 .contakt {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}m
-.sub_contakt  {
-    padding: 10px;
+    gap: 30px;
+}
+.port_item:hover {
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -o-transform: matrix(1.2,0,0.5,1.2,50,0);
+    -ms-transform: matrix(1.2,0,0.5,1.2,50,0);
+    -moz-transform: matrix(1.2,0,0.5,1.2,50,0);
+    -webkit-transform: matrix(1.2,0,0.5,1.2,50,0);
+    transform: matrix(1.2,0,0.5,1.2,50,0);
 }
 .port_item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     margin-top: 5px;
-    transition-property: background-color;
-    transition-duration: 8s;
-    color: black;
-    background-color: peru;
     padding: 3px;
+    width: 370px;
+    height: 404px;
 }
 .ul_blok {
     display: flex;
     justify-content: space-evenly;
-    height: 120px;
+    height: 230px;
 }
 .ul_blok_2 {
     display: flex;
@@ -141,15 +173,23 @@ header {
     justify-content: space-evenly;
     height: 400px;
 }
+.item:hover {
+    transition: all 0.5s ease-in-out
+    -o-transform; rotate:(720deg);
+    -ms-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
 .item {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     box-sizing: border-box;
-    transition-property: background-color;
-    transition-duration: 8s;
-    color: black;
-    background-color: green;
     padding: 3px;
 }
 h2 {
@@ -165,6 +205,18 @@ h2 {
     letter-spacing: 0.03em;
     color: #757575; 
 }
+.item:hover {
+    transition: all 0.5s ease-in-out
+    -o-transform; rotate:(720deg);
+    -ms-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
 .item_1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -174,18 +226,40 @@ h2 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    transition-property: background-color;
-    transition-duration: 8s;
-    color: black;
-    background-color: blue;
 }
 .item>img {
     width: 270px;
     height: 260px;
 }
 .fond {
-    background-color: rgb(51, 48, 80);
-    padding: 200px;
+    background-image: url(../img/Work.png);
+    height: 450px;
+    background-repeat: no-repeat;
+}
+.img_container {
+    display: flex;
+    background-color: rgb(246, 245, 250);
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    position: fixed;
+    background-color: white;
+}
+i {
+    font-weight: 400;
+    margin-right: 10px;
+    color: #b2b4b8;
+}
+.RobotoMedium a {
+    color: #b2b4b8;
+}
+.fa-regular, .far {
+    font-weight: 400;
+    margin-right: 4px;
+    color: #b2b4b8;
 }
 .fond_1 {
     background-color: rgb(51, 48, 80);
@@ -212,17 +286,12 @@ h2 {
 button {
     background-color: rgb(0, 132, 255);
 }
-.item:hover {
-    transform: scale(1.2);
-    transition: transform 0.5s;
-}  
 .title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
